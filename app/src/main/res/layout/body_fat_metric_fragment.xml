@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="app.com.randomapps.android.weightlosscalculator.fragments.BodyFatMetricSystem">
+
+
+    <!-- First column -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gender"
+            android:textSize="20sp"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="30dp"/>
+
+        <RadioGroup
+            android:id="@+id/radioMetricSex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/radioMetricMale"
+                android:text="Male"
+                android:checked="true"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="30dp"
+                android:onClick="onMetricRadioButtonClicked"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/radioMetricFemale"
+                android:text="Female"
+                android:checked="false"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="30dp"
+                android:onClick="onMetricRadioButtonClicked"/>
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+
+    <!-- Second column -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Height"
+            android:textSize="20sp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/body_fat_metric_height"
+            android:ems="3"
+            android:inputType="numberDecimal"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="40dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Centimeters"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="35dp"/>
+
+    </LinearLayout>
+
+
+    <!-- Third column -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Neck"
+            android:textSize="20sp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/body_fat_metric_neck"
+            android:ems="3"
+            android:inputType="numberDecimal"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="52dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Centimeters"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="35dp"/>
+
+    </LinearLayout>
+
+    <!-- Fourth column -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Waist"
+            android:textSize="20sp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/body_fat_metric_waist"
+            android:ems="3"
+            android:inputType="numberDecimal"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="47dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Centimeters"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="35dp"/>
+
+    </LinearLayout>
+
+
+    <!-- Fifth column -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hip"
+            android:textSize="20sp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/body_fat_metric_hip"
+            android:ems="3"
+            android:inputType="numberDecimal"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="65dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Centimeters"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="35dp"/>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/body_fat_metric_button"
+        android:text="Result"
+        android:textSize="20sp"
+        android:layout_marginTop="38dp"
+        android:layout_gravity="center_horizontal"
+        android:onClick="onMetricResultButtonClicked"/>
+
+</LinearLayout>

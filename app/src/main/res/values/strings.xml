@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Weight Loss Calculator</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_bmicalculator">BMI Calculator</string>
+    <string name="title_activity_bmr">BMR Calculator</string>
+    <string name="title_activity_bmrcalculator">BMR Calculator</string>
+    <string name="title_activity_ideal_weight_calculator">Ideal Weight Calculator</string>
+    <string name="title_activity_anorexic_bmicalculator">Anorexic BMI Calculator</string>
+    <string name="title_activity_calorie_calculator">Calorie Calculator</string>
+    <string name="title_activity_body_fat_calculator">Body Fat Calculator</string>
+    <string name="title_activity_bmiresult">Result</string>
+    <string name="title_activity_anorexic_result">Result</string>
+    <string name="title_activity_bmrresult">Result</string>
+    <string name="title_activity_body_fat_result">Result</string>
+    <string name="title_activity_ideal_weight_result">Result</string>
+    <string name="title_activity_calorie_result">Result</string>
+</resources>

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="app.com.randomapps.android.weightlosscalculator.fragments.BMIMetricSystem">
+
+
+    <!-- First column -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/bmi_metric_age_text"
+            android:text="Age"
+            android:textSize="20sp"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="40dp"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/bmi_metric_age_input"
+            android:inputType="number"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="20dp"
+            android:ems="5"/>
+
+    </LinearLayout>
+
+    <!-- Second column -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gender"
+            android:textSize="20sp"
+            android:id="@+id/bmi_metric_gender_text"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="30dp"/>
+
+        <RadioGroup
+            android:id="@+id/radioMetricSex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/radioMetricMale"
+                android:text="Male"
+                android:checked="true"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="25dp"
+                android:onClick="onMetricRadioButtonClicked"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/radioMetricFemale"
+                android:text="Female"
+                android:checked="false"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="25dp"
+                android:onClick="onMetricRadioButtonClicked"/>
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <!-- Third column -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/bmi_metric_height_text"
+            android:text="Height"
+            android:textSize="20sp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="25dp"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/bmi_metric_height_centimeters"
+            android:ems="5"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="25dp"
+            android:inputType="numberDecimal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Centimeters"
+            android:layout_marginTop="32dp"
+            android:layout_marginLeft="7dp"/>
+
+    </LinearLayout>
+
+
+    <!-- Fourth column -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Weight"
+            android:textSize="20sp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="25dp"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/bmi_metric_weight"
+            android:ems="5"
+            android:inputType="numberDecimal"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="25dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kilograms"
+            android:layout_marginTop="33dp"
+            android:layout_marginLeft="7dp"/>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bmi_metric_button"
+        android:text="Result"
+        android:textSize="20sp"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center|top"
+        android:onClick="onMetricResultButtonClicked"/>
+
+</LinearLayout>

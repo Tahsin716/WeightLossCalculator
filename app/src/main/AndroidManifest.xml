@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="app.com.randomapps.android.weightlosscalculator">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".BMICalculator"
+            android:label="@string/title_activity_bmicalculator"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".BMRCalculator"
+            android:label="@string/title_activity_bmrcalculator"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".IdealWeightCalculator"
+            android:label="@string/title_activity_ideal_weight_calculator"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AnorexicBMICalculator"
+            android:label="@string/title_activity_anorexic_bmicalculator"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".CalorieCalculator"
+            android:label="@string/title_activity_calorie_calculator"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".BodyFatCalculator"
+            android:label="@string/title_activity_body_fat_calculator"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".results.BMIResult"
+            android:label="@string/title_activity_bmiresult"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".results.AnorexicResult"
+            android:label="@string/title_activity_anorexic_result"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".results.BMRResult"
+            android:label="@string/title_activity_bmrresult"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".results.BodyFatResult"
+            android:label="@string/title_activity_body_fat_result"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".results.IdealWeightResult"
+            android:label="@string/title_activity_ideal_weight_result"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".results.CalorieResult"
+            android:label="@string/title_activity_calorie_result"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+    </application>
+
+</manifest>

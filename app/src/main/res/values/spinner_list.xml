@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="activity_list">
+
+        <item>Please select an activity</item>
+        <item>Sedentary - little or no exercise</item>
+        <item>Lightly Active - exercise 1-3 times/week</item>
+        <item>Moderately Active - exercise 5-3 times/week</item>
+        <item>Very Active - hard exercise 6-7 times/week</item>
+        <item>Very hard exercise or physical job</item>
+
+    </string-array>
+
+</resources>

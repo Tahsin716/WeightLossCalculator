@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="app.com.randomapps.android.weightlosscalculator.fragments.IdealWeightMetricSystem">
+
+
+
+    <!-- First column -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ideal_metric_age_text"
+            android:text="Age"
+            android:textSize="20sp"
+            android:layout_marginTop="60dp"
+            android:layout_marginLeft="60dp"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ideal_metric_age_input"
+            android:inputType="number"
+            android:layout_marginTop="60dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="40dp"
+            android:ems="5"/>
+
+    </LinearLayout>
+
+
+    <!-- Second column -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gender"
+            android:textSize="20sp"
+            android:id="@+id/ideal_metric_gender_text"
+            android:layout_marginTop="45dp"
+            android:layout_marginLeft="50dp"/>
+
+        <RadioGroup
+            android:id="@+id/radioMetricSex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/radioMetricMale"
+                android:text="Male"
+                android:checked="true"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="45dp"
+                android:onClick="onMetricRadioButtonClicked"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/radioMetricFemale"
+                android:text="Female"
+                android:checked="false"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="45dp"
+                android:onClick="onMetricRadioButtonClicked"/>
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+
+    <!-- Third column -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ideal_us_height_text"
+            android:text="Height"
+            android:textSize="20sp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="45dp"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="43dp"
+            android:layout_marginLeft="30dp"
+            android:inputType="numberDecimal"
+            android:id="@+id/ideal_height_input"
+            android:ems="5"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Centimeters"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="50dp"/>
+
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ideal_us_button"
+        android:text="Result"
+        android:textSize="20sp"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center|top"
+        android:onClick="onMetricResultButtonClick"/>
+
+</LinearLayout>

@@ -360,45 +360,6 @@ public class CalorieCalculator extends AppCompatActivity {
     }
 
 
-    //Used to display the result in a dialog box
-    private void displayResult(int[] answer, String fragmentName) {
-
-        String result = new String();
-
-        switch (fragmentName) {
-            case "Metric" :
-                result = String.format("You need %d calories/day to maintain your weight%n"+
-                        "You need %d calories/day to lose 0.5 kg/week%n"+
-                        "You need %d calories/day to lose 1 kg/week%n"+
-                        "You need %d calories/day to gain 0.5 kg/week%n"+
-                        "You need %d calories/day to gain 1 kg/week%n", answer[0], answer[1], answer[2], answer[3], answer[4]);
-                break;
-            case "US" :
-                 result = String.format("You need %d calories/day to maintain your weight%n"+
-                        "You need %d calories/day to lose 1 lbs/week%n"+
-                        "You need %d calories/day to lose 2 lbs/week%n"+
-                        "You need %d calories/day to gain 1 lbs/week%n"+
-                        "You need %d calories/day to gain 2 lbs/week", answer[0], answer[1], answer[2], answer[3], answer[4]);
-                        break;
-        }
-
-        AlertDialog.Builder alertDialog = new AlertDialog.Builder(this);
-        alertDialog.setTitle("Result");
-        alertDialog.setMessage(result);
-
-        //OK button to close the dialog
-        alertDialog.setNeutralButton("Close", new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialog, int which) {
-                dialog.dismiss();
-            }
-        });
-
-        AlertDialog dialog = alertDialog.create();
-        dialog.show();
-
-
-    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
